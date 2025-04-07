@@ -1,0 +1,252 @@
+body {
+    font-family: sans-serif;
+    background-color: #fefae0;
+    color: #606c38;
+    transition: all ease-out 1s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    grid-column: 2 / 3;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.divTopBtns {
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 0 0px 15px #606c38;
+}
+
+/* LOGIN & SIGNUP Button Styles */
+#signUp {
+    border-radius: 0 30px 30px 0;
+    border: solid #606c38;
+    border-left: hidden;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    min-width: 35px;
+    transition: 0.5s;
+    color: #606c38;
+    background-color: #fefae0;
+    box-shadow: inset 100% 0 0 0 #606c38;
+}
+
+#signUp:hover {
+    color: #fefae0;
+    box-shadow: inset 100px 0 0 0 #606c38;
+}
+
+#signUp:active {
+    transform: scale(0.9);
+}
+
+#login {
+    border-radius: 30px 0 0 30px;
+    border: solid #606c38;
+    border-right: hidden;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    min-width: 35px;
+    transition: 0.5s;
+    color: #606c38;
+    background-color: #fefae0;
+    box-shadow: inset 100% 0 0 0 #606c38;
+}
+
+#login:hover {
+    color: #fefae0;
+    box-shadow: inset -100px 0 0 0 #606c38;
+}
+
+#login:active {
+    transform: scale(0.9);
+}
+
+.logoutbtn {
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    margin: 0;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    min-width: 35px;
+    transition: 0.5s;
+    color: #fefae0;
+    background-color: #606c38;
+    box-shadow: inset 100% 0 0 0 #fefefe;
+    transition: all ease-in .5s;
+}
+
+.logoutbtn:hover {
+    display: block;
+    color: #606c38;
+    border: 1px solid #606c38;
+    box-shadow: inset 100px 0 0 0 #fefae0;
+}
+
+
+.logoutbtn:active {
+    transform: scale(0.9);
+}
+
+.topbtns {
+    padding: 10px 15px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    transition: (0.5s);
+}
+
+.proImg {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.profile {
+    display: inline-flex;
+    transition: ease-out 0.6s;
+    background-color: transparent;
+    border-radius: 20px;
+    margin-right: 0;
+    border: 3px solid transparent;
+    box-shadow: 0 0px 10px #606c38;
+}
+
+#username {
+    padding: 4.5px;
+    padding-top: 6px;
+}
+
+.topnav {
+    margin-top: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0;
+    margin: 0 3px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 0px 15px #606c38;
+    background-color: #606c38;
+    border: 3px solid #606c38;
+    border-bottom: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #fefae0;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #606c38;
+    margin: 0;
+    transition: all ease-out .5s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #fefae0;
+    color: #606c38;
+}
+
+.ContentBox {
+    margin-top: 0;
+    background-color: #fefae0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border: 3px solid #606c38;
+    border-top: hidden;
+    margin: 0 3px;
+    box-shadow: 0 0px 15px #606c38;
+}
+
+.ContentBox h2 {
+    color: #606c38;
+}
+
+.addNew {
+    padding: 10px 0;
+    font-size: large;
+    width: 300px;
+    color: #fefae0;
+    border: 3px solid #606c38;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    background-color: #606c38;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.addNew:hover {
+    color: #606c38;
+    background-color: #fefae0;
+    box-shadow: 0 0px 10px #606c38;
+}
+
+.addNew:active {
+    scale: 1;
+}
+
+/* ✅ Responsive Design: Adjust LOGIN & SIGNUP Buttons on Small Screens */
+@media screen and (max-width: 600px) {
+    .divTopBtns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #login,
+    #signUp {
+        width: 100%;
+        text-align: center;
+        border: solid;
+    }
+
+    #login {
+        border-radius: 30px 30px 0 0;
+        border: solid #606c38;
+    }
+
+    #login:hover {
+        box-shadow: inset 0 -100px 0 0 #606c38;
+        border: solid #606c38;
+    }
+
+    #signUp {
+        border-radius: 0 0 30px 30px;
+        border: solid #606c38;
+    }
+
+    #signUp:hover {
+        box-shadow: inset 0 100px 0 0 #606c38;
+        border: solid #606c38;
+    }
+}
